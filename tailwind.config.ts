@@ -13,6 +13,13 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily:{
+        futura: ["FUTURA"]
+      },
+      colors: {
+        clr1: '#ede3d5',
+        clr2: '#b6524f',
+      },
     },
   },
   plugins: [],
