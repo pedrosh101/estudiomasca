@@ -6,7 +6,7 @@ import Navbar from "./components/navbar";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center  justify-between">
-      <Navbar />
+      <Navbar isProjetosPage={false}/>
       <Image
         src={Prov}
         alt="Imagem"
@@ -16,7 +16,6 @@ export default function Home() {
       <div className="flex">
         <Image src={Logo} alt="Imagem" width={260} height={260} />
       </div>
-      <div className="flex"></div>
     </main>
   );
 }
