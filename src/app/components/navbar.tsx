@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
     <div className={`flex w-full text-xl justify-end sm:justify-center font-futura ${isProjetosPage ? 'text-clr2' : ''}`}>
       <div
         onClick={toggleNav}
-        className="text-2xl cursor-pointer place-self-center sm:hidden"
+        className="text-2xl cursor-pointer place-self-center sm:hidden absolute top-3 right-3"
       >
         <svg viewBox="0 0 24 24" fill={`${isProjetosPage ? '#b6524f' : '#ede3d5'}`} height="2em">
           <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z" />

@@ -8,8 +8,8 @@ function page() {
     <>
       <main className="flex flex-col bg-clr1 min-h-screen text-black text-sm leading-6">
         <Navbar isProjetosPage={true} />
-        <div className="flex flex-col sm:flex-row mt-4 sm:mt-10 sm:p-12 p-2">
-          <div className="flex flex-col space-y-4 sm:mx-12 mx-4 sm:w-2/5">
+        <div className="flex flex-col sm:flex-row sm:px-16 px-4 pt-20 sm:pt-24 pb-4">
+          <div className="flex flex-col space-y-4 sm:w-2/5">
             <h1>
               Lorem ipsum per conubia nostra, per inceptos himenaeos. Sed a
               neque facilisis, ultricies est id, tempor velit. Sed a aliquet

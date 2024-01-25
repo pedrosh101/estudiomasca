@@ -33,7 +33,7 @@ const ProjetoDetalhes = ({ params }: any) => {
     <>
       <main className="flex flex-col bg-clr1 min-h-screen">
         <Navbar isProjetosPage={true} />
-        <div className="flex flex-col sm:flex-row sm:p-12 p-2 sm:mx-12 mx-4 bg-clr1">
+        <div className="flex flex-col sm:flex-row sm:px-16 px-4 pt-16 sm:pt-12 pb-4 bg-clr1">
           {/* coluna da esquerda */}
           <div className="flex flex-col w-full sm:w-1/2 text-black ">
             {/* segundo elemento, textos */}
@@ -67,7 +67,7 @@ const ProjetoDetalhes = ({ params }: any) => {
 
           {/* coluna direita, miniaturas */}
 
-          <div className="grid grid-cols-2 sm:gap-4 gap-2 mt-8">
+          <div className="grid sm:grid-cols-2 sm:gap-4 gap-2 mt-8">
             {proj?.fotos.map((foto, index) => (
               <div
                 key={index}
