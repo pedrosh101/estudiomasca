@@ -2,11 +2,17 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
-const Navbar = () => {
+interface NavbarProps {
+  isProjetosPage: boolean;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef<HTMLDivElement | null>(null);
 
+
   const handleClickOutside = (event: MouseEvent) => {
+
     if (
       navRef.current &&
       !(navRef.current as Node).contains(event.target as Node)
@@ -42,12 +48,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full text-xl justify-end sm:justify-center font-futura">
+    <div className={`flex w-full text-xl justify-end sm:justify-center font-futura ${isProjetosPage ? 'text-clr2' : ''}`}>
       <div
         onClick={toggleNav}
         className="text-2xl cursor-pointer place-self-center sm:hidden"
       >
-        <svg viewBox="0 0 24 24" fill="white" height="2em">
+        <svg viewBox="0 0 24 24" fill={`${isProjetosPage ? '#b6524f' : '#ede3d5'}`} height="2em">
           <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z" />
         </svg>
       </div>
@@ -55,16 +61,16 @@ const Navbar = () => {
       <div className="sm:flex items-center justify-between p-6 sm:px-0 font-futura tracking-widest hidden">
         <ul className="flex space-x-24 text-center font-medium text-xl">
           <Link href="/projetos">
-            <li className="cursor-pointer hover:text-clr1">Projetos</li>
+            <li className={`cursor-pointer ${isProjetosPage ? 'hover:text-clr2' : 'hover:text-clr1'}`}>Projetos</li>
           </Link>
           <Link href="/estudio-masca">
-            <li className="cursor-pointer hover:text-clr1">Estúdio Masca</li>
+            <li className={`cursor-pointer ${isProjetosPage ? 'hover:text-clr2' : 'hover:text-clr1'}`}>Estúdio Masca</li>
           </Link>
           <Link href="/agenda">
-            <li className="cursor-pointer hover:text-clr1">Agenda</li>
+            <li className={`cursor-pointer ${isProjetosPage ? 'hover:text-clr2' : 'hover:text-clr1'}`}>Agenda</li>
           </Link>
           <Link href="/contato">
-            <li className="cursor-pointer hover:text-clr1">Contato</li>
+            <li className={`cursor-pointer ${isProjetosPage ? 'hover:text-clr2' : 'hover:text-clr1'}`}>Contato</li>
           </Link>
         </ul>
       </div>

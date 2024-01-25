@@ -20,6 +20,9 @@ const config: Config = {
         clr1: '#ede3d5',
         clr2: '#b6524f',
       },
+      height: {
+        'custom1': '42rem',
+      },
     },
   },
   plugins: [],
