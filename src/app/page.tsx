@@ -16,6 +16,7 @@ export default function Home() {
       <div className="flex">
         <Image src={Logo} alt="Imagem" width={260} height={260} />
       </div>
+      <div className="flex"></div>
     </main>
   );
 }
