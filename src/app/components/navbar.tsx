@@ -66,9 +66,6 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
           <Link href="/estudio-masca">
             <li className={`cursor-pointer ${isProjetosPage ? 'hover:text-clr2' : 'hover:text-clr1'}`}>Estúdio Masca</li>
           </Link>
-          <Link href="/agenda">
-            <li className={`cursor-pointer ${isProjetosPage ? 'hover:text-clr2' : 'hover:text-clr1'}`}>Agenda</li>
-          </Link>
           <Link href="/contato">
             <li className={`cursor-pointer ${isProjetosPage ? 'hover:text-clr2' : 'hover:text-clr1'}`}>Contato</li>
           </Link>
@@ -96,9 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({ isProjetosPage }) => {
                   Estúdio Masca
                 </li>
               </Link>
-              <Link href="/agenda">
-                <li className="cursor-pointer hover:text-clr1">Agenda</li>
-              </Link>
+
               <Link href="/contato">
                 <li className="cursor-pointer hover:text-clr1">Contato</li>
               </Link>

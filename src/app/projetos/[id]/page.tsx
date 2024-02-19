@@ -2,7 +2,7 @@
 import Navbar from "@/app/components/navbar";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Thumbs } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { projects } from "../../data/projects";
 import { useState } from "react";
 
