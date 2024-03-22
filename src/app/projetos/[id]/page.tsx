@@ -44,7 +44,14 @@ const ProjetoDetalhes = ({ params }: any) => {
             <div className="sm:w-4/6 w-full mt-4 sm:mt-8 text-sm">
               <div>
                 <h2 className="font-semibold">Sobre</h2>
-                <h2>{proj?.description}</h2>
+                <h2>
+                {proj?.description.split('¨').map((phrase, index) => (
+                  <span key={index}>
+                    {phrase.trim()}
+                    {index !== proj?.description.split('¨').length - 1 && <br />}
+                  </span>
+                ))}
+              </h2>
               </div>
               <div className="my-4">
                 <h2 className="font-semibold">Arquitetura</h2>
@@ -67,7 +74,7 @@ const ProjetoDetalhes = ({ params }: any) => {
 
           {/* coluna direita, miniaturas */}
 
-          <div className="grid sm:grid-cols-2 sm:gap-4 gap-2 mt-8">
+          <div className="grid sm:grid-cols-3 sm:gap-4 gap-2 mt-8">
             {proj?.fotos.map((foto, index) => (
               <div
                 key={index}
@@ -101,21 +108,23 @@ const ProjetoDetalhes = ({ params }: any) => {
 
                   <div className="overflow-hidden">
                     <div className="container">
-                      <Swiper
+                    <Swiper
                         navigation
                         pagination={{ type: "fraction" }}
                         modules={[Navigation, Pagination]}
-                        className="h-96 w-96"
+                        className="md:h-[50em] md:w-[80em] h-96 w-96"
+                        initialSlide={
+                          selectedImageIndex !== null ? selectedImageIndex : 0
+                        }
                       >
                         {proj?.fotos.map((foto, index) => (
                           <SwiperSlide key={index}>
-                            <div className="flex h-3/4 w-full items-center justify-center">
+                            <div className="flex h-full w-full items-center justify-center">
                               <Image
                                 src={foto}
                                 alt={`Imagem ${index + 1}`}
                                 className="block object-contain h-full w-full"
-                                height={500}
-                                width={500}
+                                fill
                               />
                             </div>
                           </SwiperSlide>
