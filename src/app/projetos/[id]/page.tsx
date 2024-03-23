@@ -45,18 +45,31 @@ const ProjetoDetalhes = ({ params }: any) => {
               <div>
                 <h2 className="font-semibold">Sobre</h2>
                 <h2>
-                {proj?.description.split('¨').map((phrase, index) => (
-                  <span key={index}>
-                    {phrase.trim()}
-                    {index !== proj?.description.split('¨').length - 1 && <br />}
-                  </span>
-                ))}
-              </h2>
+                  {proj?.description.split("¨").map((phrase, index) => (
+                    <span key={index}>
+                      {phrase.trim()}
+                      {index !== proj?.description.split("¨").length - 1 && (
+                        <br />
+                      )}
+                    </span>
+                  ))}
+                </h2>
               </div>
               <div className="my-4">
                 <h2 className="font-semibold">Arquitetura</h2>
                 <h2>{proj?.name}</h2>
               </div>
+              <div className="my-4">
+                <h2 className="font-semibold">Projeto</h2>
+                <h2>{proj?.projeto}</h2>
+              </div>
+              {proj?.parceria && (
+                <div className="my-4">
+                  <h2 className="font-semibold">Parceria</h2>
+                  <h2>{proj.parceria}</h2>
+                </div>
+              )}
+
               <div className="my-4"></div>
               <div className="justify-between">
                 <h2 className="font-semibold">Local</h2>
@@ -91,7 +104,7 @@ const ProjetoDetalhes = ({ params }: any) => {
               </div>
             ))}
 
-            {/* modal, embla carousel */}
+            {/* modal, swiper carousel */}
             {modalIsOpen && selectedImageIndex !== null && (
               <div
                 className="fixed inset-0 flex items-center justify-center min-h-screen"
@@ -108,7 +121,7 @@ const ProjetoDetalhes = ({ params }: any) => {
 
                   <div className="overflow-hidden">
                     <div className="container">
-                    <Swiper
+                      <Swiper
                         navigation
                         pagination={{ type: "fraction" }}
                         modules={[Navigation, Pagination]}

@@ -36,12 +36,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-clr1 justify-between">
       <Navbar isProjetosPage={true} />
-      {/* <Image
-        src={Fundo}
-        alt="Imagem"
-        fill
-        className="w-full h-full object-cover -z-20 opacity-80"
-      /> */}
       <div className="flex">
         <Image src={currentImage} alt="Imagem" width={260} height={260} />
       </div>
