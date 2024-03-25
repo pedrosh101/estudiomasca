@@ -53,7 +53,7 @@ function page() {
         <div className="sm:px-16 text-3xl px-4 pt-6 sm:pt-24 pb-4">
           <h1>Equipe Principal</h1>
         </div>
-        <div className="flex flex-col sm:flex-row sm:px-16 px-4 pt-6 sm:pt-24 pb-4">
+        <div className="flex flex-col sm:flex-row sm:px-16 px-4 pt-6 sm:pt-10 pb-4">
           <div className="flex flex-col space-y-4 sm:w-2/5">
             <h1>
             Paula Mascarenhas  - Arquiteta Urbanista, Diretora criativa e Fundadora do Estúdio Masca.
