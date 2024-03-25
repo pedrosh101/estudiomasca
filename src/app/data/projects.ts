@@ -284,7 +284,7 @@ export const projects = [
   },
   {
     id: 12,
-    title: "Espaço Vida e Saúde",
+    title: "Rooftop Solar",
     description:
       "Consultoria de Interiores, feita para um espaço comercial que ocupa uma casa antiga e muito bonita. Transformamos a Fachada, mantendo suas características arquitetônicas principais mas usando cores referentes à marca.¨ Na parte interna, buscamos integrar visualmente os dois cômodos existentes, mantivemos as portas e janelas de madeira agora com uma nova pintura. Descascamos algumas paredes para criar cenários com os tijolinhos aparentes e trazer mais aconchego aos usuários. Mobiliários simples mas bem pensados e distribuídos, com uma boa iluminação completaram a transformação.",
     img: "/proj/ROOFTOPSOLAR/2.jpg",
