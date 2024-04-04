@@ -1,4 +1,3 @@
-
 import Navbar from "../components/navbar";
 import Image from "next/image";
 import Profile from "../../../public/img/proj2.png";
@@ -84,57 +83,59 @@ function page() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-4/5 sm:px-16 px-4 pt-6 sm:pt-10 pb-4">
+
+        {/* talita */}
+        <div className="flex w-4/5 sm:px-16 px-4 pt-6 sm:pt-20 pb-4">
           <div className="flex sm:w-2/5 sm:h-custom1 h-96 mt-4 sm:mt-0">
             <div className="relative w-full">
               <Image
                 src={Talita}
                 alt="Talita"
                 fill
-                className="object-contain object-left"
+                className="object-contain object-left-top"
               />
             </div>
           </div>
-          <div className="flex flex-col space-y-4 sm:w-3/5 mt-2">
-            <h1>
-              Talita Costa - Estudante de Engenharia Civil CEFET-Curvelo e
-              estagiária de projetos.
-            </h1>
-          </div>
+          <h1 className="flex space-y-4 sm:w-3/5 pl-20">
+            Talita Costa - Estudante de Engenharia Civil CEFET-Curvelo e
+            estagiária de projetos.
+          </h1>
         </div>
         <div className="flex w-4/5 sm:px-16 text-3xl px-4 pt-6 sm:pt-16 pb-4">
           <h1>Equipe Complementar</h1>
         </div>
-        <div className="flex w-4/5 pb-12">
+
+        {/* equipe complementar */}
+        <div className="flex w-4/5 text-base mb-14">
           <div className="flex flex-col sm:px-16 px-4 pt-6 sm:pt-10 pb-4">
-            <div className="flex  h-96 mt-4 sm:mt-0">
-              <div className="relative w-full">
+            <div className="flex h-96 mt-4 sm:mt-0">
+              <div className="relative w-96">
                 <Image
                   src={Jéssica}
                   alt="Jéssica"
                   fill
-                  className="object-contain object-left"
+                  className="object-contain"
                 />
               </div>
             </div>
-            <div className="flex flex-col space-y-4  mt-2">
-              <h1>Jéssica Batista - Administradora e Consultora Financeira.</h1>
-            </div>
+            <h1 className="flex flex-col space-y-4 mt-3">
+              Jéssica Batista - Administradora e Consultora Financeira.
+            </h1>
           </div>
           <div className="flex flex-col sm:px-16 px-4 pt-6 sm:pt-10 pb-4">
             <div className="flex h-96 mt-4 sm:mt-0">
-              <div className="relative w-full">
+              <div className="relative w-96">
                 <Image
                   src={Raquel}
                   alt="Raquel"
                   fill
-                  className="object-contain object-left"
+                  className="object-contain"
                 />
               </div>
             </div>
-            <div className="flex flex-col space-y-4  mt-2">
-              <h1>Raquel Gomes - Administração e Contratos.</h1>
-            </div>
+            <h1 className="flex flex-col text-center space-y-4 mt-3">
+              Raquel Gomes - Administração e Contratos.
+            </h1>
           </div>
         </div>
       </main>
