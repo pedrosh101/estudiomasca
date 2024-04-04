@@ -11,7 +11,7 @@ function page() {
     <>
       <main className="flex flex-col items-center bg-clr1 min-h-screen text-black text-sm leading-6">
         <Navbar isProjetosPage={true} />
-        <div className="flex flex-col w-4/5 sm:px-16 px-4 pt-10 pb-4">
+        <div className="flex flex-col sm:w-4/5 sm:px-16 px-8 sm:pt-10 pt-20 pb-4">
           <div className="flex sm:h-custom1 h-96 sm:mt-0">
             <div className="relative w-full">
               <Image
@@ -48,36 +48,35 @@ function page() {
             </h1>
           </div>
         </div>
-        <div className="flex w-4/5 sm:px-16 text-3xl px-4 pt-6 sm:pt-16 pb-4">
+        <div className="flex w-full sm:w-4/5 sm:px-16 px-8 text-3xl pt-6 sm:pt-16 pb-4">
           <h1>Equipe Principal</h1>
         </div>
-        <div className="flex flex-col w-4/5 sm:flex-row sm:px-16 px-4 pt-6 sm:pt-10 pb-4">
-          <div className="flex flex-col space-y-4 sm:w-2/5">
-            <h1>
-              Paula Mascarenhas - Arquiteta Urbanista, Diretora criativa e
-              Fundadora do Estúdio Masca.
-              <br />
-              <br />
-              Formada em 2018 pela UNA, quase todo o curso de Arquitetura e
-              Urbanismo foi feito na FUMEC mas devido a incompatibilidade de
-              horários entre trabalho e a faculdade, concluiu o TCC na UNA.
-              <br />
-              <br />
-              Arquitetura sempre foi um interesse, desde nova e cursar
-              arquitetura sempre foi uma certeza. Começou a trabalhar desde os
-              primeiros períodos da faculdade ampliando sua experiência
-              profissional. Nos últimos anos de curso, ocupou o cargo de
-              arquiteta responsável por uma obra de Retrofit em um prédio no
-              centro de Belo Horizonte. O edifício comercial tinha 10 andares e
-              foi completamente reformado sob o comando e gerenciamento da
-              Paula. A obra durou dois anos de muito trabalho e aprendizado. A
-              partir disso, com todo o conhecimento e maturidade adquirida nessa
-              jornada desafiadora, nasceu o ESTUDIO MASCA, como um desejo
-              pessoal de ter sua própria empresa e comandar seus próprios
-              projetos.
-            </h1>
-          </div>
-          <div className="flex sm:w-3/5 sm:h-custom1 h-96 mt-4 sm:mt-0">
+
+        {/* paula */}
+        <div className="flex flex-col-reverse sm:flex-row sm:w-4/5 sm:px-16 px-8 pt-4 sm:pt-10 pb-4">
+          <h1 className="flex flex-col space-y-4 sm:w-2/5 mt-3 sm:mt-0">
+            Paula Mascarenhas - Arquiteta Urbanista, Diretora criativa e
+            Fundadora do Estúdio Masca.
+            <br />
+            <br />
+            Formada em 2018 pela UNA, quase todo o curso de Arquitetura e
+            Urbanismo foi feito na FUMEC mas devido a incompatibilidade de
+            horários entre trabalho e a faculdade, concluiu o TCC na UNA.
+            <br />
+            <br />
+            Arquitetura sempre foi um interesse, desde nova e cursar arquitetura
+            sempre foi uma certeza. Começou a trabalhar desde os primeiros
+            períodos da faculdade ampliando sua experiência profissional. Nos
+            últimos anos de curso, ocupou o cargo de arquiteta responsável por
+            uma obra de Retrofit em um prédio no centro de Belo Horizonte. O
+            edifício comercial tinha 10 andares e foi completamente reformado
+            sob o comando e gerenciamento da Paula. A obra durou dois anos de
+            muito trabalho e aprendizado. A partir disso, com todo o
+            conhecimento e maturidade adquirida nessa jornada desafiadora,
+            nasceu o ESTUDIO MASCA, como um desejo pessoal de ter sua própria
+            empresa e comandar seus próprios projetos.
+          </h1>
+          <div className="flex sm:w-3/5 sm:h-custom1 h-96 sm:mt-0">
             <div className="relative w-full">
               <Image src={Paula} alt="Paula" fill className="object-contain" />
             </div>
@@ -85,18 +84,18 @@ function page() {
         </div>
 
         {/* talita */}
-        <div className="flex w-4/5 sm:px-16 px-4 pt-6 sm:pt-20 pb-4">
+        <div className="flex flex-col sm:flex-row sm:w-4/5 sm:px-16 px-4 pt-6 sm:pt-20 pb-4">
           <div className="flex sm:w-2/5 sm:h-custom1 h-96 mt-4 sm:mt-0">
             <div className="relative w-full">
               <Image
                 src={Talita}
                 alt="Talita"
                 fill
-                className="object-contain object-left-top"
+                className="object-contain sm:object-left-top"
               />
             </div>
           </div>
-          <h1 className="flex space-y-4 sm:w-3/5 pl-20">
+          <h1 className="flex text-center space-y-4 sm:w-3/5 sm:pl-20 mt-3 sm:mt-0">
             Talita Costa - Estudante de Engenharia Civil CEFET-Curvelo e
             estagiária de projetos.
           </h1>
@@ -106,7 +105,7 @@ function page() {
         </div>
 
         {/* equipe complementar */}
-        <div className="flex w-4/5 text-base mb-14">
+        <div className="flex flex-col sm:flex-row w-4/5 text-base mb-14">
           <div className="flex flex-col sm:px-16 px-4 pt-6 sm:pt-10 pb-4">
             <div className="flex h-96 mt-4 sm:mt-0">
               <div className="relative w-96">
@@ -118,7 +117,7 @@ function page() {
                 />
               </div>
             </div>
-            <h1 className="flex flex-col space-y-4 mt-3">
+            <h1 className="flex flex-col text-center space-y-4 mt-3">
               Jéssica Batista - Administradora e Consultora Financeira.
             </h1>
           </div>
