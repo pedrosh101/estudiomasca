@@ -7,8 +7,8 @@ import Projeto from "../components/projeto";
 function page() {
   return (
     <>
-      <main className="flex flex-col bg-clr2 min-h-screen">
-        <Navbar isProjetosPage={false}/>
+      <main className="flex flex-col bg-clr1 min-h-screen">
+        <Navbar isProjetosPage={true}/>
         <div className="grid sm:grid-cols-4 sm:gap-0.5 gap-1 px-0.5 pt-20 sm:pt-6 text-black pb-0.5">
         {projects.map((proj) => (
             <Link

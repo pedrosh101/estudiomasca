@@ -1,113 +1,96 @@
 import Navbar from "../components/navbar";
 import Image from "next/image";
 import Profile from "../../../public/img/proj2.png";
-import Paula from "../../../public/img/Paula.jpg";
-import Talita from "../../../public/img/Talita.jpg";
-import Jéssica from "../../../public/img/Jéssica.jpg";
-import Raquel from "../../../public/img/Raquel.jpg";
+import Paula from "../../../public/img/Paula.png";
+import Talita from "../../../public/img/Talita.png";
+import Jéssica from "../../../public/img/Jéssica.png";
+import Raquel from "../../../public/img/Raquel.png";
 
 function page() {
   return (
     <>
       <main className="flex flex-col items-center bg-clr1 min-h-screen text-black text-sm leading-6">
         <Navbar isProjetosPage={true} />
-        <div className="flex flex-col sm:w-4/5 sm:px-16 px-8 sm:pt-10 pt-20 pb-4">
-          <div className="flex sm:h-custom1 h-96 sm:mt-0">
-            <div className="relative w-full">
-              <Image
-                src={Profile}
-                alt="Profile"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col space-y-4 pt-6">
-            <h1>
-              Somos um Estúdio de arquitetura sediado em Curvelo-MG, e desde
-              2021 atuamos na criação e transformação dos espaços em todo o
-              Brasil.
-              <br />
-              Entendemos a arquitetura como um agente transformador da vida
-              humana. Capaz de modificar a qualidade de vida, a saúde e as
-              relações da pessoas que ocupam o espaço e de todo o entorno.
-              <br />
-              Buscamos uma eterna entrega de autenticidade e qualidade ao
-              ambiente projetado e construído, afim de entregar ambientes
-              únicos, personalizados e compatíveis á dinâmica dos moradores.
-              <br />
-              Especulamos maneiras de integrar o espaço construído ao seu
-              entorno natural, de forma a buscar a melhor implantação dentro
-              daquele ambiente. Todo lote é único, com suas características
-              naturais individuais e devem ser trabalhadas de forma a usar esses
-              elementos como elevadores ao projeto.
-              <br />
-              Cultura e tradições somadas à soluções modernas e o bom uso do
-              entorno natural são as premissas do Estúdio Masca na busca por um
-              ambiente construído com melhor qualidade.
-            </h1>
-          </div>
-        </div>
-        <div className="flex w-full sm:w-4/5 sm:px-16 px-8 text-3xl pt-6 sm:pt-16 pb-4">
-          <h1>Equipe Principal</h1>
-        </div>
 
-        {/* paula */}
-        <div className="flex flex-col-reverse sm:flex-row sm:w-4/5 sm:px-16 px-8 pt-4 sm:pt-10 pb-4">
+        {/* sobre */}
+        <div className="flex flex-col-reverse sm:flex-row sm:w-4/5 sm:px-16 px-8 pt-4 sm:pt-10 sm:pb-10 my-16 sm:space-x-16 text-base">
           <h1 className="flex flex-col space-y-4 sm:w-2/5 mt-3 sm:mt-0">
-            Paula Mascarenhas - Arquiteta Urbanista, Diretora criativa e
-            Fundadora do Estúdio Masca.
+            Olá, somos o ESTÚDIO MASCA.
             <br />
             <br />
-            Formada em 2018 pela UNA, quase todo o curso de Arquitetura e
-            Urbanismo foi feito na FUMEC mas devido a incompatibilidade de
-            horários entre trabalho e a faculdade, concluiu o TCC na UNA.
+            Após uma longa jornada profissional em escritórios e obras de Belo
+            Horizonte -MG, a Arquiteta Paula Mascarenhas (FUMEC, 2018) decidiu
+            usar toda expertise adquirida para fundar o Estúdio Masca.
+            <br />
+            Somos um estúdio de arquitetura sediado em Curvelo-MG, e desde 2021
+            atuamos na criação e transformação de espaços em todo o Brasil.
+            Entendemos a arquitetura como um agente transformador da vida
+            humana, capaz de modificar a qualidade de vida, a saúde e as
+            relações das pessoas que ocupam o espaço e de todo o entorno.
             <br />
             <br />
-            Arquitetura sempre foi um interesse, desde nova e cursar arquitetura
-            sempre foi uma certeza. Começou a trabalhar desde os primeiros
-            períodos da faculdade ampliando sua experiência profissional. Nos
-            últimos anos de curso, ocupou o cargo de arquiteta responsável por
-            uma obra de Retrofit em um prédio no centro de Belo Horizonte. O
-            edifício comercial tinha 10 andares e foi completamente reformado
-            sob o comando e gerenciamento da Paula. A obra durou dois anos de
-            muito trabalho e aprendizado. A partir disso, com todo o
-            conhecimento e maturidade adquirida nessa jornada desafiadora,
-            nasceu o ESTUDIO MASCA, como um desejo pessoal de ter sua própria
-            empresa e comandar seus próprios projetos.
+            Buscamos uma entrega constante de autenticidade e qualidade ao
+            ambiente projetado e construído, a fim de oferecer espaços únicos,
+            personalizados e compatíveis com a dinâmica dos moradores.
+            Especulamos maneiras de integrar o espaço construído ao seu entorno
+            natural, buscando a melhor implantação dentro daquele ambiente. Todo
+            lote é único, com suas características naturais individuais, e devem
+            ser trabalhadas de forma a usar esses elementos como elevadores ao
+            projeto.
+            <br />
+            Cultura e tradições, somadas a soluções modernas e ao bom uso do
+            entorno natural, são as premissas do Estúdio Masca na busca por um
+            ambiente construído com melhor qualidade.
           </h1>
-          <div className="flex sm:w-3/5 sm:h-custom1 h-96 sm:mt-0">
+          <div className="flex sm:w-3/5 sm:h-custom1 h-96 sm:mt-0 sm:mb-0 mb-6">
             <div className="relative w-full">
-              <Image src={Paula} alt="Paula" fill className="object-contain" />
+              <Image src={Profile} alt="Paula" fill className="object-cover" />
             </div>
           </div>
         </div>
 
-        {/* talita */}
-        <div className="flex flex-col sm:flex-row sm:w-4/5 sm:px-16 px-4 pt-6 sm:pt-20 pb-4">
-          <div className="flex sm:w-2/5 sm:h-custom1 h-96 mt-4 sm:mt-0">
-            <div className="relative w-full">
-              <Image
-                src={Talita}
-                alt="Talita"
-                fill
-                className="object-contain sm:object-left-top"
-              />
+        {/* equipe  */}
+        <div className="grid sm:grid-cols-4 sm:w-4/5 sm:mt-10 mb-20 text-sm">
+          <div className="flex flex-col px-4 pt-6 sm:pt-10 pb-4">
+            <div className="flex h-72 mt-4 sm:mt-0">
+              <div className="relative w-96">
+                <Image
+                  src={Paula}
+                  alt="Paula"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="text-center mt-3">
+              <h1 className="text-base">Paula Mascarenhas</h1>
+              <h2>
+                Arquiteta Urbanista, Diretora criativa e Fundadora do Estúdio
+                Masca.
+              </h2>
             </div>
           </div>
-          <h1 className="flex text-center space-y-4 sm:w-3/5 sm:pl-20 mt-3 sm:mt-0">
-            Talita Costa - Estudante de Engenharia Civil CEFET-Curvelo e
-            estagiária de projetos.
-          </h1>
-        </div>
-        <div className="flex w-4/5 sm:px-16 text-3xl px-4 pt-6 sm:pt-16 pb-4">
-          <h1>Equipe Complementar</h1>
-        </div>
-
-        {/* equipe complementar */}
-        <div className="flex flex-col sm:flex-row w-4/5 text-base mb-14">
-          <div className="flex flex-col sm:px-16 px-4 pt-6 sm:pt-10 pb-4">
-            <div className="flex h-96 mt-4 sm:mt-0">
+          <div className="flex flex-col  px-4 pt-6 sm:pt-10 pb-4">
+            <div className="flex h-72 mt-4 sm:mt-0">
+              <div className="relative w-96">
+                <Image
+                  src={Talita}
+                  alt="Talita"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="text-center mt-3">
+              <h1 className="text-base">Talita Costa</h1>
+              <h2>
+                Estudante de Engenharia Civil CEFET-Curvelo e estagiária de
+                projetos.
+              </h2>
+            </div>
+          </div>
+          <div className="flex flex-col  px-4 pt-6 sm:pt-10 pb-4">
+            <div className="flex h-72 mt-4 sm:mt-0">
               <div className="relative w-96">
                 <Image
                   src={Jéssica}
@@ -117,12 +100,13 @@ function page() {
                 />
               </div>
             </div>
-            <h1 className="flex flex-col text-center space-y-4 mt-3">
-              Jéssica Batista - Administradora e Consultora Financeira.
-            </h1>
+            <div className="text-center mt-3">
+              <h1 className="text-base">Jéssica Batista</h1>
+              <h2>Administradora e Consultora Financeira.</h2>
+            </div>
           </div>
-          <div className="flex flex-col sm:px-16 px-4 pt-6 sm:pt-10 pb-4">
-            <div className="flex h-96 mt-4 sm:mt-0">
+          <div className="flex flex-col  px-4 pt-6 sm:pt-10 pb-4">
+            <div className="flex h-72 mt-4 sm:mt-0">
               <div className="relative w-96">
                 <Image
                   src={Raquel}
@@ -132,9 +116,10 @@ function page() {
                 />
               </div>
             </div>
-            <h1 className="flex flex-col text-center space-y-4 mt-3">
-              Raquel Gomes - Administração e Contratos.
-            </h1>
+            <div className="text-center mt-3">
+              <h1 className="text-base">Raquel Gomes</h1>
+              <h2>Administração e Contratos.</h2>
+            </div>
           </div>
         </div>
       </main>
