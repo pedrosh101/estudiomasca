@@ -13,7 +13,7 @@ function page() {
         <Navbar isProjetosPage={true} />
 
         {/* sobre */}
-        <div className="flex flex-col-reverse sm:flex-row sm:w-4/5 sm:px-16 px-8 pt-4 sm:pt-10 sm:pb-10 my-16 sm:space-x-16 text-base">
+        <div className="flex flex-col-reverse sm:flex-row sm:w-5/6 px-8 pt-4 sm:space-x-8 my-16 sm:my-8 text-base">
           <h1 className="flex flex-col space-y-4 sm:w-2/5 mt-3 sm:mt-0">
             Olá, somos o ESTÚDIO MASCA.
             <br />
@@ -44,13 +44,13 @@ function page() {
           </h1>
           <div className="flex sm:w-3/5 sm:h-custom1 h-96 sm:mt-0 sm:mb-0 mb-6">
             <div className="relative w-full">
-              <Image src={Profile} alt="Paula" fill className="object-cover" />
+              <Image src={Profile} alt="Paula" fill className="object-contain" />
             </div>
           </div>
         </div>
 
         {/* equipe  */}
-        <div className="grid sm:grid-cols-4 sm:w-4/5 sm:mt-10 mb-20 text-sm">
+        <div className="grid sm:grid-cols-4 sm:w-5/6 sm:mt-10 mb-20 text-sm">
           <div className="flex flex-col px-4 pt-6 sm:pt-10 pb-4">
             <div className="flex h-72 mt-4 sm:mt-0">
               <div className="relative w-96">

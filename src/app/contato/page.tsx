@@ -1,7 +1,28 @@
+"use client";
+
 import React from "react";
 import Navbar from "../components/navbar";
+import GoogleMapReact from "google-map-react";
+
+interface MarkerProps {
+  lat: number;
+  lng: number;
+  text: string;
+}
+
+const AnyReactComponent: React.FC<MarkerProps> = ({ text }) => (
+  <div>{text}</div>
+);
 
 function page() {
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
+
   return (
     <>
       <main className="flex flex-col items-center bg-clr1 min-h-screen text-black text-sm leading-6">
@@ -19,6 +40,22 @@ function page() {
               R. Des. Barata, 97 - Passaginha, Curvelo - MG, 35790-303
             </p>
           </a>
+          {/* maps */}
+          <div className="flex h-96 w-full mt-6">
+            <GoogleMapReact
+              bootstrapURLKeys={{
+                key: "AIzaSyAxagI-A59wQPI5ZeJNOnNjmgenNZyIkQs",
+              }}
+              defaultCenter={defaultProps.center}
+              defaultZoom={defaultProps.zoom}
+            >
+              <AnyReactComponent
+                lat={-18.727244768059386}
+                lng={-44.24254544347476}
+                text="My Marker"
+              />
+            </GoogleMapReact>
+          </div>
 
           <h1 className="text-lg mt-8">Mande uma mensagem!</h1>
 
@@ -59,21 +96,18 @@ function page() {
           </div>
 
           <div className="flex space-x-2">
-          <svg
-      viewBox="0 0 1024 1024"
-      fill="#22668d"
-      height="1.6em"
-      width="1.6em"
-
-    >
-      <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0068.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z" />
-    </svg>
+            <svg
+              viewBox="0 0 1024 1024"
+              fill="#22668d"
+              height="1.6em"
+              width="1.6em"
+            >
+              <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0068.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z" />
+            </svg>
             <a href="mailto:paula@estudiomasca.com">
-            <p className="text-clr2">paula@estudiomasca.com</p>
-          </a>
+              <p className="text-clr2">paula@estudiomasca.com</p>
+            </a>
           </div>
-
-
 
           <div className="h-0.5 w-full bg-clr2 mt-8" />
         </div>
