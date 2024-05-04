@@ -44,7 +44,7 @@ function page() {
           <div className="flex h-96 w-full mt-6">
             <GoogleMapReact
               bootstrapURLKeys={{
-                key: "AIzaSyAxagI-A59wQPI5ZeJNOnNjmgenNZyIkQs",
+                key: "",
               }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
