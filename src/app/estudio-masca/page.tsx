@@ -13,7 +13,7 @@ function page() {
         <Navbar isProjetosPage={true} />
 
         {/* sobre */}
-        <div className="flex flex-col-reverse sm:flex-row sm:w-5/6 px-8 pt-4 sm:space-x-8 my-16 sm:my-8 text-base">
+        <div className="flex flex-col-reverse sm:flex-row sm:w-5/6 sm:space-x-8 px-4 sm:px-0 py-16 text-base">
           <h1 className="flex flex-col space-y-4 sm:w-2/5 mt-3 sm:mt-0">
             Olá, somos o ESTÚDIO MASCA.
             <br />
@@ -44,7 +44,13 @@ function page() {
           </h1>
           <div className="flex sm:w-3/5 sm:h-custom1 h-96 sm:mt-0 sm:mb-0 mb-6">
             <div className="relative w-full">
-              <Image src={Profile} alt="Paula" fill className="object-contain" />
+              <Image
+                src={Profile}
+                alt="Paula"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-contain"
+              />
             </div>
           </div>
         </div>
@@ -58,6 +64,7 @@ function page() {
                   src={Paula}
                   alt="Paula"
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-contain"
                 />
               </div>
@@ -77,6 +84,7 @@ function page() {
                   src={Talita}
                   alt="Talita"
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-contain"
                 />
               </div>
@@ -96,6 +104,7 @@ function page() {
                   src={Jéssica}
                   alt="Jéssica"
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-contain"
                 />
               </div>
@@ -112,6 +121,7 @@ function page() {
                   src={Raquel}
                   alt="Raquel"
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-contain"
                 />
               </div>

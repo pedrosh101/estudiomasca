@@ -27,7 +27,7 @@ function page() {
     <>
       <main className="flex flex-col items-center bg-clr1 min-h-screen text-black text-sm leading-6">
         <Navbar isProjetosPage={true} />
-        <div className="flex flex-col sm:w-4/5 sm:px-16 px-8 sm:pt-10 pt-20 pb-4">
+        <div className="flex flex-col sm:w-4/5 pt-16 pb-4">
           <div className="h-0.5 w-1/2 bg-clr2 mb-8" />
           <h1 className="text-lg mb-8">Onde Estamos</h1>
 
@@ -41,7 +41,7 @@ function page() {
             </p>
           </a>
           {/* maps */}
-          <div className="flex h-96 w-full mt-6">
+          {/* <div className="flex h-96 w-full mt-6">
             <GoogleMapReact
               bootstrapURLKeys={{
                 key: "",
@@ -55,7 +55,7 @@ function page() {
                 text="My Marker"
               />
             </GoogleMapReact>
-          </div>
+          </div> */}
 
           <h1 className="text-lg mt-8">Mande uma mensagem!</h1>
 
